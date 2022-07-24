@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DesktopShortcutCreator</class>
+ <widget class="QWidget" name="DesktopShortcutCreator">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>577</width>
+    <height>225</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Desktop Shortcut Creator</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="7" column="0" colspan="5">
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="m_createButton">
+       <property name="toolTip">
+        <string>Create shortcut</string>
+       </property>
+       <property name="text">
+        <string>Create</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="m_quitButton">
+       <property name="toolTip">
+        <string>Quit program</string>
+       </property>
+       <property name="text">
+        <string>Quit</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="4" column="0">
+    <widget class="QLabel" name="label_3">
+     <property name="text">
+      <string>Icon:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="10" column="0" rowspan="2" colspan="5">
+    <widget class="QLabel" name="m_authorInfo">
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;Written by: Trần Quang Mạnh (Sat July 23, 2022). All source code can be found &lt;/span&gt;&lt;a href=&quot;https://github.com/manhtran0508/DesktopShortcutCreator&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#007af4;&quot;&gt;here&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; color:#000000;&quot;&gt;.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="label_4">
+     <property name="text">
+      <string>Exec:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="9" column="0" colspan="5">
+    <widget class="Line" name="line">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="0">
+    <widget class="QLabel" name="label_5">
+     <property name="text">
+      <string>Terminal: </string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0">
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>Name:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="3">
+    <widget class="QToolButton" name="m_selectIconButton">
+     <property name="text">
+      <string>...</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="3">
+    <widget class="QToolButton" name="m_selectExecButton">
+     <property name="text">
+      <string>...</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="2" colspan="2">
+    <widget class="QCheckBox" name="m_terminalOn">
+     <property name="toolTip">
+      <string>The program will run with terminal window if you check</string>
+     </property>
+     <property name="text">
+      <string>Yes</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QLabel" name="label_2">
+     <property name="text">
+      <string>Comment:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="0">
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="6" column="2" colspan="2">
+    <widget class="QCheckBox" name="m_startupNotify">
+     <property name="toolTip">
+      <string>Notify when application starts</string>
+     </property>
+     <property name="text">
+      <string>Yes</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="2">
+    <widget class="QLineEdit" name="m_iconPath">
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+     <property name="clearButtonEnabled">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="2">
+    <widget class="QLineEdit" name="m_execPath">
+     <property name="text">
+      <string/>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+     <property name="clearButtonEnabled">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="2" colspan="3">
+    <widget class="QLineEdit" name="m_comment">
+     <property name="toolTip">
+      <string>Short infomation about your application</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="2" colspan="3">
+    <widget class="QLineEdit" name="m_nameDisplay">
+     <property name="toolTip">
+      <string>The name you want shown</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="0" colspan="2">
+    <widget class="QLabel" name="label_6">
+     <property name="text">
+      <string>Startup notification: </string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
